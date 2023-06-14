@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-2">
+      <button class="btn btn-warning" style="cursor: pointer;"  (click)="goBackTask()">Back</button>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-4 mb-2" *ngFor="let card of cards">
+      <div class="card" style="cursor: pointer;"  (click)="openCard(card.id)">
+        <div class="card-body">
+          <h5 class="card-title">{{ card.title }}</h5>
+          <p class="card-text">{{ card.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

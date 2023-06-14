@@ -1,0 +1,6 @@
+<div class="container">
+  <h2>Dropdown</h2>
+  <ng-select [(ngModel)]="selectedItem" (search)="onSearch($event.term)">
+    <ng-option *ngFor="let item of dropdownItems" [value]="item">{{ item.title }}</ng-option>
+  </ng-select>
+</div>
